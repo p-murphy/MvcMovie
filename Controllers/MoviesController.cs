@@ -145,5 +145,10 @@ namespace MvcMovie.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult Sandbox()
+        {
+            return View();
+        }
     }
 }

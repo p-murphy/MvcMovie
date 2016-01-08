@@ -1,0 +1,78 @@
+﻿
+
+<!-- Single statement blocks  -->
+@{ var total = 7; }
+@{ var myMessage = "Hello World"; }
+
+<!-- Inline expressions -->
+<p>The value of your account is: @total </p>
+<p>The value of myMessage is: @myMessage</p>
+
+<!-- Multi-statement block -->
+@{
+    var greeting = "Welcome to our site!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var greetingMessage = greeting + " Today is: " + weekDay;
+}
+<p>The greeting is: @greetingMessage</p>
+
+<!-- Single statement block.  -->
+@{ var theMonth = DateTime.Now.Month; }
+<p>The numeric value of the current month: @theMonth</p>
+
+<!-- Multi-statement block. -->
+@{
+    var outsideTemp = 79;
+    var weatherMessage = "Hello, it is " + outsideTemp + " degrees.";
+}
+<p>Today's weather: @weatherMessage</p>
+
+@{
+    var lol = "The quick brown fox jumped over the lazy dog.";
+}
+
+<p>This is my lols: @lol </p>
+
+@{ 
+    var wonky = @"Then I said, ""OMG ewwww, that's, SO ghetto!""";
+}
+
+<p>@wonky</p>
+
+<text>
+    The time is: <br /> @DateTime.Now
+    <br />
+    @DateTime.Now is the <em>current</em> time.
+</text>
+
+@{
+    var minTemp = 75;
+    <text>It is the month of @DateTime.Now.ToString("MMMM"), and
+    it's a <em>great</em> day! <br /><p>
+        You can go swimming if it's at
+        least @minTemp degrees.
+    </p></text>
+}
+
+@{
+
+    // Assigning a number to a variable.
+    var theCount = 3;
+
+    // Assigning an expression to a variable.
+    var monthlyTotal = theCount + 5;
+
+    // Assigning a date value to a variable.
+    var today = DateTime.Today;
+
+    // Declaring variables using explicit data types.
+    string name = "Joe";
+    int count = 5;
+    DateTime tomorrow = DateTime.Now.AddDays(1);
+}
+
+@{
+    // Using variables as part of an inline expression.
+    <p>The predicted annual total is: @( monthlyTotal * 12)</p>
+
+}
