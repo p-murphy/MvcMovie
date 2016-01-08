@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet5-MvcMovie-c1d22859-c3d2-4f22-9b03-689178442600",
   "version": "1.0.0-*",
   "compilationOptions": {
@@ -6,6 +6,7 @@
   },
 
   "dependencies": {
+    "bootstrap": "3.3.5",
     "EntityFramework.Commands": "7.0.0-rc1-final",
     "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
     "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",

@@ -3,6 +3,12 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "bootstrap/3.3.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -138,6 +144,9 @@
         "runtime": {
           "lib/net45/System.Interactive.Async.dll": {}
         }
+      },
+      "jQuery/1.9.1": {
+        "type": "package"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -2059,6 +2068,12 @@
       }
     },
     "DNXCore,Version=v5.0": {
+      "bootstrap/3.3.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -2165,6 +2180,9 @@
         "runtime": {
           "lib/portable-windows8+net45+wp8/System.Interactive.Async.dll": {}
         }
+      },
+      "jQuery/1.9.1": {
+        "type": "package"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -4777,6 +4795,12 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
+      "bootstrap/3.3.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -4912,6 +4936,9 @@
         "runtime": {
           "lib/net45/System.Interactive.Async.dll": {}
         }
+      },
+      "jQuery/1.9.1": {
+        "type": "package"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -6836,6 +6863,12 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
+      "bootstrap/3.3.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -6971,6 +7004,9 @@
         "runtime": {
           "lib/net45/System.Interactive.Async.dll": {}
         }
+      },
+      "jQuery/1.9.1": {
+        "type": "package"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -8895,6 +8931,12 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x86": {
+      "bootstrap/3.3.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -9001,6 +9043,9 @@
         "runtime": {
           "lib/portable-windows8+net45+wp8/System.Interactive.Async.dll": {}
         }
+      },
+      "jQuery/1.9.1": {
+        "type": "package"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -12120,6 +12165,12 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x64": {
+      "bootstrap/3.3.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -12226,6 +12277,9 @@
         "runtime": {
           "lib/portable-windows8+net45+wp8/System.Interactive.Async.dll": {}
         }
+      },
+      "jQuery/1.9.1": {
+        "type": "package"
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
         "type": "package",
@@ -15346,6 +15400,28 @@
     }
   },
   "libraries": {
+    "bootstrap/3.3.5": {
+      "type": "package",
+      "sha512": "j4a7m/PsNZA90VcCf8pacPq70ZvZQ/u3FQHzRk7EakZeP5twYHJaqvc/cUznYJpEZfNzuh9AiZMMIhYhR5e+dw==",
+      "files": [
+        "bootstrap.3.3.5.nupkg",
+        "bootstrap.3.3.5.nupkg.sha512",
+        "bootstrap.nuspec",
+        "content/Content/bootstrap.css",
+        "content/Content/bootstrap.css.map",
+        "content/Content/bootstrap.min.css",
+        "content/Content/bootstrap-theme.css",
+        "content/Content/bootstrap-theme.css.map",
+        "content/Content/bootstrap-theme.min.css",
+        "content/fonts/glyphicons-halflings-regular.eot",
+        "content/fonts/glyphicons-halflings-regular.svg",
+        "content/fonts/glyphicons-halflings-regular.ttf",
+        "content/fonts/glyphicons-halflings-regular.woff",
+        "content/fonts/glyphicons-halflings-regular.woff2",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.min.js"
+      ]
+    },
     "EntityFramework.Commands/7.0.0-rc1-final": {
       "type": "package",
       "serviceable": true,
@@ -15454,6 +15530,23 @@
         "lib/net45/System.Interactive.Async.XML",
         "lib/portable-windows8+net45+wp8/System.Interactive.Async.dll",
         "lib/portable-windows8+net45+wp8/System.Interactive.Async.XML"
+      ]
+    },
+    "jQuery/1.9.1": {
+      "type": "package",
+      "sha512": "HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
+      "files": [
+        "Content/Scripts/jquery-1.9.1.js",
+        "Content/Scripts/jquery-1.9.1.min.js",
+        "Content/Scripts/jquery-1.9.1.min.map",
+        "Content/Scripts/jquery-1.9.1-vsdoc.js",
+        "jQuery.1.9.1.nupkg",
+        "jQuery.1.9.1.nupkg.sha512",
+        "jQuery.nuspec",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.9.1.intellisense.js",
+        "Tools/uninstall.ps1"
       ]
     },
     "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
@@ -21145,6 +21238,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "bootstrap >= 3.3.5",
       "EntityFramework.Commands >= 7.0.0-rc1-final",
       "EntityFramework.MicrosoftSqlServer >= 7.0.0-rc1-final",
       "Microsoft.AspNet.Authentication.Cookies >= 1.0.0-rc1-final",

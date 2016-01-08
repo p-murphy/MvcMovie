@@ -7,6 +7,7 @@
 
         <environment names="Development">
             <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/lib/bootswatch/spacelab/bootstrap.css" />
             <link rel="stylesheet" href="~/css/site.css" />
         </environment>
         <environment names="Staging,Production">
@@ -26,6 +27,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <button id="sidebarToggle" class="btn btn-primary btn-lg">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                    </button>
+                    <button id="sidebarToggle" class="btn btn-primary btn-lg">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
                     <a asp-controller="Movies" asp-action="Index" class="navbar-brand">Mvc Movie</a>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -33,6 +40,7 @@
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li><a asp-controller="Home" asp-action="About">About</a></li>
                         <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        <li><a asp-controller="Users" asp-action="Index">Users</a></li>
                     </ul>
                     @await Html.PartialAsync("_LoginPartial")
                 </div>

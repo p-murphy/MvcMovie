@@ -168,6 +168,22 @@ namespace MvcMovie.Migrations
                     b.HasKey("ID");
                 });
 
+            modelBuilder.Entity("MvcMovie.Models.User", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("FirstName")
+                        .HasAnnotation("MaxLength", 30);
+
+                    b.Property<string>("LastName")
+                        .HasAnnotation("MaxLength", 30);
+
+                    b.Property<DateTime>("birthdate");
+
+                    b.HasKey("ID");
+                });
+
             modelBuilder.Entity("Microsoft.AspNet.Identity.EntityFramework.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNet.Identity.EntityFramework.IdentityRole")

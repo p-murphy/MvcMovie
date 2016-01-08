@@ -18,5 +18,6 @@ namespace MvcMovie.Models
             // Add your customizations after calling base.OnModelCreating(builder);
         }
         public DbSet<Movie> Movie { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }
